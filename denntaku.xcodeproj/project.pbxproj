@@ -51,7 +51,7 @@
 		6E6EFBDC16366B9500417CCC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6E6EFBDF16366B9500417CCC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		6E6EFBE116366B9500417CCC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6E6EFBE216366B9500417CCC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6E6EFBE216366B9500417CCC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
 		6E6EFBE916366B9500417CCC /* denntakuTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = denntakuTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6EFBEA16366B9500417CCC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		6E6EFBF216366B9500417CCC /* denntakuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "denntakuTests-Info.plist"; sourceTree = "<group>"; };
@@ -446,6 +446,7 @@
 				6E6EFBFD16366B9500417CCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E6EFBFE16366B9500417CCC /* Build configuration list for PBXNativeTarget "denntakuTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +455,7 @@
 				6E6EFC0016366B9500417CCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
