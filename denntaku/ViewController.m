@@ -55,61 +55,10 @@ double s=0;
                             stringWithFormat:@"%d", 0]];
     answer=0;
 }
-/*
-- (void)Button:(int)number{
-    switch(keisan){
-        case 0:
-            
-            if(shou == 0){
-                x=x*10+number;
-                [[self gamenn] setText:[NSString
-                        stringWithFormat:
-                                    @"%g", x]];
-            }
-    
-    
-    else
-    {
-        W=number*pow(10,(-n));
-        
-        s=W+x;
-        [[self gamenn] setText:[NSString
-                                stringWithFormat:@"%g", s]];
-        x=s;
-        n=n+1;
-    }
-            break;
-            
-        case 1:
-            
-            if(shou == 0){
-                y=y*10+number;
-                [[self gamenn] setText:[NSString
-                                    stringWithFormat:@"%g", y]];
-            }
-            
-            
-            else
-            {
-                W=number*pow(10,(-n));
-                
-                s=W+y;
-                [[self gamenn] setText:[NSString
-                                    stringWithFormat:@"%g", s]];
-                y=s;
-                n=n+1;
-            }
-            break;
-    }
-}
-            */
-            
-            
-            
             
             
 - (IBAction)zero:(id)sender {
-    switch(keisan) {
+   switch(keisan) {
          case 0:
             
             if(shou == 0){
@@ -118,7 +67,7 @@ double s=0;
             }
             else if(shou==1)
             {
-                W=x*pow(10,(-n));
+                W=0*pow(10,(-n));
                 
                 s=W+x;
                 [[self gamenn] setText:[NSString
@@ -137,7 +86,7 @@ double s=0;
             }
             else if(shou==1)
             {
-                W=y*pow(10,(-n));
+                W=0*pow(10,(-n));
                 
                 s=W+y;
                 [[self gamenn] setText:[NSString
@@ -148,11 +97,10 @@ double s=0;
          break;
     }
     
-   /* [self Button:0];*/
-}
+ }
 
 - (IBAction)one:(id)sender {
-  switch(keisan) {
+ switch(keisan) {
         case 0:
           if(shou == 0){
             x=x*10+1;
@@ -161,7 +109,7 @@ double s=0;
           
           else if(shou==1){
               
-              W=x*pow(10,(-n));
+              W=1*pow(10,(-n));
               
               s=W+x;
               [[self gamenn] setText:[NSString
@@ -180,7 +128,7 @@ double s=0;
           }
           else if(shou==1)
           {
-              W=y*pow(10,(-n));
+              W=1*pow(10,(-n));
               
               s=W+y;
               [[self gamenn] setText:[NSString
@@ -191,7 +139,7 @@ double s=0;
 
         break;
     }
-    /*[self Button:1];*/
+    
 }
 
 - (IBAction)two:(id)sender {
@@ -204,7 +152,7 @@ double s=0;
             
             else if(shou==1){
                 
-                W=x*pow(10,(-n));
+                W=2*pow(10,(-n));
                 
                 s=W+x;
                 [[self gamenn] setText:[NSString
@@ -223,7 +171,7 @@ double s=0;
             }
             else if(shou==1)
             {
-                W=y*pow(10,(-n));
+                W=2*pow(10,(-n));
                 
                 s=W+y;
                 [[self gamenn] setText:[NSString
@@ -234,8 +182,7 @@ double s=0;
             
             break;
     }
-   /*[self Button:2];*/
-}
+  }
 
 - (IBAction)three:(id)sender {
     switch(keisan) {
@@ -247,7 +194,7 @@ double s=0;
             
             else if(shou==1){
                 
-                W=x*pow(10,(-n));
+                W=3*pow(10,(-n));
                 
                 s=W+x;
                 [[self gamenn] setText:[NSString
@@ -266,7 +213,7 @@ double s=0;
             }
             else if(shou==1)
             {
-                W=y*pow(10,(-n));
+                W=3*pow(10,(-n));
                 
                 s=W+y;
                 [[self gamenn] setText:[NSString
@@ -277,7 +224,7 @@ double s=0;
             
             break;
     }
-   /* [self Button:3];*/
+    
 }
 
 - (IBAction)four:(id)sender {
@@ -290,7 +237,7 @@ double s=0;
             
             else if(shou==1){
                 
-                W=x*pow(10,(-n));
+                W=4*pow(10,(-n));
                 
                 s=W+x;
                 [[self gamenn] setText:[NSString
@@ -309,7 +256,7 @@ double s=0;
             }
             else if(shou==1)
             {
-                W=y*pow(10,(-n));
+                W=4*pow(10,(-n));
                 
                 s=W+y;
                 [[self gamenn] setText:[NSString
@@ -320,8 +267,7 @@ double s=0;
             
             break;
     }
-/*[self Button:4];*/
-}
+      }
 
 - (IBAction)five:(id)sender {
     switch(keisan) {
@@ -333,7 +279,7 @@ double s=0;
             
             else if(shou==1){
                 
-                W=x*pow(10,(-n));
+                W=5*pow(10,(-n));
                 
                 s=W+x;
                 [[self gamenn] setText:[NSString
@@ -352,7 +298,7 @@ double s=0;
             }
             else if(shou==1)
             {
-                W=y*pow(10,(-n));
+                W=5*pow(10,(-n));
                 
                 s=W+y;
                 [[self gamenn] setText:[NSString
@@ -363,7 +309,7 @@ double s=0;
             
             break;
     }
-   /*[self Button:5];*/
+   
     
 }
 - (IBAction)six:(id)sender {
@@ -376,7 +322,7 @@ double s=0;
             
             else if(shou==1){
                 
-                W=x*pow(10,(-n));
+                W=6*pow(10,(-n));
                 
                 s=W+x;
                 [[self gamenn] setText:[NSString
@@ -395,7 +341,7 @@ double s=0;
             }
             else if(shou==1)
             {
-                W=y*pow(10,(-n));
+                W=6*pow(10,(-n));
                 
                 s=W+y;
                 [[self gamenn] setText:[NSString
@@ -406,7 +352,7 @@ double s=0;
             
             break;
     }
-    /*[self Button:6];*/
+    
 }
 
 - (IBAction)seven:(id)sender {
@@ -419,7 +365,7 @@ double s=0;
             
             else if(shou==1){
                 
-                W=x*pow(10,(-n));
+                W=7*pow(10,(-n));
                 
                 s=W+x;
                 [[self gamenn] setText:[NSString
@@ -438,7 +384,7 @@ double s=0;
             }
             else if(shou==1)
             {
-                W=y*pow(10,(-n));
+                W=7*pow(10,(-n));
                 
                 s=W+y;
                 [[self gamenn] setText:[NSString
@@ -449,7 +395,7 @@ double s=0;
             
             break;
     }
-   /* [self Button:7];*/
+    
 }
 
 - (IBAction)eight:(id)sender {
@@ -462,7 +408,7 @@ double s=0;
             
             else if(shou==1){
                 
-                W=x*pow(10,(-n));
+                W=8*pow(10,(-n));
                 
                 s=W+x;
                 [[self gamenn] setText:[NSString
@@ -481,7 +427,7 @@ double s=0;
             }
             else if(shou==1)
             {
-                W=y*pow(10,(-n));
+                W=8*pow(10,(-n));
                 
                 s=W+y;
                 [[self gamenn] setText:[NSString
@@ -492,7 +438,7 @@ double s=0;
             
             break;
     }
-    /*[self Button:8];*/
+    
 }
 
 - (IBAction)nine:(id)sender {
@@ -505,7 +451,7 @@ double s=0;
             
             else if(shou==1){
                 
-                W=x*pow(10,(-n));
+                W=9*pow(10,(-n));
                 
                 s=W+x;
                 [[self gamenn] setText:[NSString
@@ -524,7 +470,7 @@ double s=0;
             }
             else if(shou==1)
             {
-                W=y*pow(10,(-n));
+                W=9*pow(10,(-n));
                 
                 s=W+y;
                 [[self gamenn] setText:[NSString
@@ -535,8 +481,7 @@ double s=0;
             
             break;
     }
-   /* [self Button:9];*/
-}
+   }
 
 
 - (IBAction)equal:(id)sender {
