@@ -42,7 +42,7 @@ double s=0;
 
 
 
-- (IBAction)AC:(id)sender {
+- (IBAction)AC:(id)sender {//ACを押したとき初期状態に戻す
     x=0;
     y=0;
     Z=0;
@@ -57,49 +57,49 @@ double s=0;
 }
             
             
-- (IBAction)zero:(id)sender {
+- (IBAction)zero:(id)sender {//0を押したとき
    switch(keisan) {
-         case 0:
+       case 0:           //最初の入力をxとする
             
-            if(shou == 0){
+            if(shou == 0){   //整数の場合
              x=x*10;
              [[self gamenn] setText:[NSString stringWithFormat:@"%g", x]];
             }
-            else if(shou==1)
+            else if(shou==1)//少数の場合
             {
-                W=0*pow(10,(-n));
+                W=0*pow(10,(-n));//10の-n乗の計算
                 
                 s=W+x;
                 [[self gamenn] setText:[NSString
                                         stringWithFormat:@"%g", s]];
                 x=s;
-                n=n+1;
+                n=n+1;      //nを増やすことで小数点の位置をずらす
             }
             break;
             
             
-         case 1:
+         case 1://符号を入力した後の入力をyとする
             
-            if(shou == 0){
+            if(shou == 0){       //整数の場合
              y=y*10;
          [[self gamenn] setText:[NSString stringWithFormat:@"%g", y]];
             }
-            else if(shou==1)
+            else if(shou==1)      //少数の場合
             {
-                W=0*pow(10,(-n));
+                W=0*pow(10,(-n));//10の-n乗の計算
                 
                 s=W+y;
                 [[self gamenn] setText:[NSString
                                         stringWithFormat:@"%g", s]];
                 y=s;
-                n=n+1;
+                n=n+1;     //nを増やすことで小数点の位置をずらす
             }
          break;
     }
     
  }
 
-- (IBAction)one:(id)sender {
+- (IBAction)one:(id)sender {//1を押したとき
  switch(keisan) {
         case 0:
           if(shou == 0){
@@ -142,7 +142,7 @@ double s=0;
     
 }
 
-- (IBAction)two:(id)sender {
+- (IBAction)two:(id)sender {//2を押したとき
     switch(keisan) {
         case 0:
             if(shou == 0){
@@ -184,7 +184,7 @@ double s=0;
     }
   }
 
-- (IBAction)three:(id)sender {
+- (IBAction)three:(id)sender {//3を押したとき
     switch(keisan) {
         case 0:
             if(shou == 0){
@@ -227,7 +227,7 @@ double s=0;
     
 }
 
-- (IBAction)four:(id)sender {
+- (IBAction)four:(id)sender {//4を押したとき
     switch(keisan) {
         case 0:
             if(shou == 0){
@@ -269,7 +269,7 @@ double s=0;
     }
       }
 
-- (IBAction)five:(id)sender {
+- (IBAction)five:(id)sender {//5を押したとき
     switch(keisan) {
         case 0:
             if(shou == 0){
@@ -312,7 +312,7 @@ double s=0;
    
     
 }
-- (IBAction)six:(id)sender {
+- (IBAction)six:(id)sender {//6を押したとき
     switch(keisan) {
         case 0:
             if(shou == 0){
@@ -355,7 +355,7 @@ double s=0;
     
 }
 
-- (IBAction)seven:(id)sender {
+- (IBAction)seven:(id)sender {//7を押したとき
     switch(keisan) {
         case 0:
             if(shou == 0){
@@ -398,7 +398,7 @@ double s=0;
     
 }
 
-- (IBAction)eight:(id)sender {
+- (IBAction)eight:(id)sender {//8を押したとき
     switch(keisan) {
         case 0:
             if(shou == 0){
@@ -441,7 +441,7 @@ double s=0;
     
 }
 
-- (IBAction)nine:(id)sender {
+- (IBAction)nine:(id)sender {//9を押したとき
     switch(keisan) {
         case 0:
             if(shou == 0){
@@ -484,45 +484,45 @@ double s=0;
    }
 
 
-- (IBAction)equal:(id)sender {
+- (IBAction)equal:(id)sender {//=を押したとき
     switch(answer){
-        case 1:
+        case 1://足し算の計算を行う
             
             Z=x+y;
             [[self gamenn] setText:[NSString stringWithFormat:@"%g", Z]];
             x=Z;
             y=0;
-            keisan=0;
+            keisan=0;//状態を戻す
             break;
             
             
-        case 2:
+        case 2://引き算の計算を行う
             
             Z=x-y;
             [[self gamenn] setText:[NSString stringWithFormat:@"%g",Z]];
             x=Z;
             y=0;
-            keisan=0;
+            keisan=0;//状態を戻す
             break;
             
             
-        case 3:
+        case 3://かけ算の計算を行う
             
             Z=x*y;
             [[self gamenn] setText:[NSString stringWithFormat:@"%g", Z]];
             x=Z;
             y=0;
-            keisan=0;
+            keisan=0;//状態を戻す
             break;
             
             
-        case 4:
+        case 4://割り算の計算を行う
             
             Z=x/y;
             [[self gamenn] setText:[NSString stringWithFormat:@"%g", Z]];
             x=Z;
             y=0;
-            keisan=0;
+            keisan=0;//状態を戻す
             break;
 
     
@@ -531,36 +531,36 @@ double s=0;
     }
 }
 
-- (IBAction)period:(id)sender {
-   shou=1;
+- (IBAction)period:(id)sender {//小数点の計算
+   shou=1;  //shou=1に設定しelse if(shou==1)の部分で小数点の計算を行う
    }
 
 
 
 
-- (IBAction)plus:(id)sender {
+- (IBAction)plus:(id)sender {//足し算の計算
     if (keisan==0){
         
         keisan=1;
         shou=0;
         n=1;
         [[self gamenn] setText:[NSString stringWithFormat:@"%d", 0]];
-        answer=1;
+        answer=1;//epualのcase1に入る
     }
 }
 
-- (IBAction)hiku:(id)sender {
+- (IBAction)hiku:(id)sender {//引き算の計算
     if (keisan==0){
         
         keisan=1;
         shou=0;
         n=1;
         [[self gamenn] setText:[NSString stringWithFormat:@"%d", 0]];
-        answer=2;
+        answer=2;//epualのcase2に入る
     }
 }
 
-- (IBAction)kakeru:(id)sender {
+- (IBAction)kakeru:(id)sender {//かけ算の計算
  if (keisan==0){
         
         keisan=1;
@@ -568,11 +568,11 @@ double s=0;
         n=1;
         [[self gamenn] setText:[NSString
                                 stringWithFormat:@"%d", 0]];
-        answer=3;
+        answer=3;//epualのcase3に入る
     }
 }
 
-- (IBAction)waru:(id)sender {
+- (IBAction)waru:(id)sender {//割り算の計算
  if (keisan==0){
         
         keisan=1;
@@ -580,7 +580,7 @@ double s=0;
         n=1;
         [[self gamenn] setText:[NSString
                                 stringWithFormat:@"%d", 0]];
-        answer=4;
+        answer=4;//epualのcase4に入る
     }
     
 }
