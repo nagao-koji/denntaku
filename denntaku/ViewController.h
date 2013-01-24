@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StateMachine.h"
 
 @interface ViewController : UIViewController{
-    double x;
+/*    double x;
     double y;
     double Z;
     int n;
@@ -18,8 +19,11 @@
     int keisan;
     double W;
     double s;
+ */
+  double result;
 }
 @property (weak, nonatomic) IBOutlet UILabel *gamenn;
+@property StateMachine* model;
 /*@property enum {x,y} state;*/
 
 - (IBAction)AC:(id)sender;//AC
@@ -42,4 +46,12 @@
 - (IBAction)kakeru:(id)sender;//×
 - (IBAction)waru:(id)sender;//÷
 - (IBAction)period:(id)sender;//小数点
+
+/*
+-(double)calc;
+-(void)kigou:(int)ans;
+-(double)kazu:(double)k;
+-(void)reset;
+-(void)dot;
+ */
 @end

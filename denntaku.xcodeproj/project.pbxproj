@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E654C7916B0FF3D00EA7C1B /* StateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E654C7816B0FF3D00EA7C1B /* StateMachine.m */; };
 		6E6EFBC716366B9400417CCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6EFBC616366B9400417CCC /* UIKit.framework */; };
 		6E6EFBC916366B9400417CCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6EFBC816366B9400417CCC /* Foundation.framework */; };
 		6E6EFBCB16366B9400417CCC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6EFBCA16366B9400417CCC /* CoreGraphics.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E654C7716B0FF3D00EA7C1B /* StateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateMachine.h; sourceTree = "<group>"; };
+		6E654C7816B0FF3D00EA7C1B /* StateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateMachine.m; sourceTree = "<group>"; };
 		6E6EFBC216366B9400417CCC /* denntaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = denntaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6EFBC616366B9400417CCC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6E6EFBC816366B9400417CCC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -122,6 +125,8 @@
 				6E6EFBDE16366B9500417CCC /* MainStoryboard.storyboard */,
 				6E6EFBE116366B9500417CCC /* ViewController.h */,
 				6E6EFBE216366B9500417CCC /* ViewController.m */,
+				6E654C7716B0FF3D00EA7C1B /* StateMachine.h */,
+				6E654C7816B0FF3D00EA7C1B /* StateMachine.m */,
 				6E6EFBCD16366B9400417CCC /* Supporting Files */,
 			);
 			path = denntaku;
@@ -273,6 +278,7 @@
 				6E6EFBD316366B9500417CCC /* main.m in Sources */,
 				6E6EFBD716366B9500417CCC /* AppDelegate.m in Sources */,
 				6E6EFBE316366B9500417CCC /* ViewController.m in Sources */,
+				6E654C7916B0FF3D00EA7C1B /* StateMachine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
