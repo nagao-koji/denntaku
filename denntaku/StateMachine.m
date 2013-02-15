@@ -33,8 +33,6 @@ double s=0;
     answer=0;
 }
 
-
-
 - (double)kazu:(double)k{
     
     switch(keisan) {
