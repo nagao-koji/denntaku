@@ -36,14 +36,14 @@ double s=0;
 - (double)kazu:(double)k{
     
     switch(keisan) {
-        case 0:
-            if(shou == 0){
+        case 0://先に入力された値の計算
+            if(shou == 0){//実数の計算
                 x=x*10+k;
                 
                 return x;
             }
             
-            else if(shou==1){
+            else if(shou==1){//少数の計算
                 
                 W=k*pow(10,(-n));
                 
@@ -57,13 +57,13 @@ double s=0;
             
             break;
             
-        case 1:
-            if(shou == 0){
+        case 1://後から入力された物の計算
+            if(shou == 0){//実数の計算
                 y=y*10+k;
                 
                 return y;
             }
-            else if(shou==1)
+            else if(shou==1)//少数の計算
             {
                 W=k*pow(10,(-n));
                 
